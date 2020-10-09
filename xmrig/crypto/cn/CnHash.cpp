@@ -275,6 +275,9 @@ xmrig::CnHash::CnHash()
 #   ifdef XMRIG_ALGO_ARGON2
     m_map[Algorithm::AR2_CHUKWA][AV_SINGLE][Assembly::NONE]      = argon2::single_hash<Algorithm::AR2_CHUKWA>;
     m_map[Algorithm::AR2_CHUKWA][AV_SINGLE_SOFT][Assembly::NONE] = argon2::single_hash<Algorithm::AR2_CHUKWA>;
+    m_map[Algorithm::AR2_CHUKWA_V2][AV_SINGLE][Assembly::NONE]      = argon2::single_hash<Algorithm::AR2_CHUKWA_V2>;
+    m_map[Algorithm::AR2_CHUKWA_V2][AV_SINGLE_SOFT][Assembly::NONE] = argon2::single_hash<Algorithm::AR2_CHUKWA_V2>;
+	
     m_map[Algorithm::AR2_WRKZ][AV_SINGLE][Assembly::NONE]        = argon2::single_hash<Algorithm::AR2_WRKZ>;
     m_map[Algorithm::AR2_WRKZ][AV_SINGLE_SOFT][Assembly::NONE]   = argon2::single_hash<Algorithm::AR2_WRKZ>;
 #   endif
